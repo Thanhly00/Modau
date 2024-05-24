@@ -1,29 +1,25 @@
--- Function to send a welcome message to a player
-local function sendWelcomeMessage(player)
-    local welcomeMessage = "Chào mừng đến với (Thành) hack blox fruit, " .. player.Name .. "!"
-    
-    -- Create a ScreenGui
-    local screenGui = Instance.new("ScreenGui")
-    screenGui.Name = "WelcomeGui"
-    
-    -- Create a TextLabel
-    local textLabel = Instance.new("TextLabel")
-    textLabel.Size = UDim2.new(1, 0, 0, 50)  -- Size of the TextLabel
-    textLabel.Position = UDim2.new(0, 0, 0, 0)  -- Position of the TextLabel
-    textLabel.BackgroundColor3 = Color3.new(0, 0, 0)  -- Black background
-    textLabel.TextColor3 = Color3.new(1, 1, 1)  -- White text
-    textLabel.Text = welcomeMessage  -- The welcome message
-    textLabel.Parent = screenGui  -- Add the TextLabel to the ScreenGui
-    
-    -- Add the ScreenGui to the player's PlayerGui
-    screenGui.Parent = player:WaitForChild("PlayerGui")
-    
-    -- Remove the message after a few seconds
-    wait(5)
-    screenGui:Destroy()
+Check1 = string.rep("a",2) 
+if Check1 == "aa" then else
+gg.alert("Thg Log Gà🐔\nBố Mày AntiLog Rồi Con Ạ🐔","Từ Bỏ")
+while true do
+gg.searchNumber(C)        
+return
+end
 end
 
--- Event that triggers when a player joins the game
-game.Players.PlayerAdded:Connect(function(player)
-    sendWelcomeMessage(player)
-end)
+Detector = gg.getFile():match('[^/]+$')
+Name =  'ScriptDemo.lua'
+if Detector == Name then
+else 
+Error = '🤡Thành hack blox fruit🤡 '
+print(Error) 
+return
+end
+
+if gg.PACKAGE == "com.khoimodify" then
+else
+  gg.alert("🔒Dùng GG Khôi Script🚬")
+  while true do
+    os.exit()
+  end
+end
